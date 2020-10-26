@@ -1,0 +1,67 @@
+package com.briup.conf.impl;
+
+import com.briup.client.Client;
+import com.briup.client.Gather;
+import com.briup.conf.BackUP;
+import com.briup.conf.Configuration;
+import org.dom4j.Document;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+
+import java.io.File;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
+
+public class ConfigurationImpl implements Configuration {
+    private BackUP backUP;
+    private Gather gather;
+    private Client client;
+    private Properties pro = new Properties();
+    public ConfigurationImpl() {
+        try {
+            FileReader fr = new FileReader("src\\main\\java\\base.properties");
+            pro.load(fr);
+            SAXReader read = new SAXReader();
+            Document doc = read.read(new File("src\\main\\java\\base.xml"));
+            Element root = doc.getRootElement();
+            List<Element> elements = root.elements();
+            List<Class> classes = new ArrayList<>();
+            for (Element el : elements) {
+                String aClass = el.attributeValue("class");
+                classes.add(Class.forName(aClass));
+            }
+            for (Class aClass : classes) {
+                Object o = aClass.newInstance();
+                if (o instanceof BackUP){
+                    backUP = (BackUP)o;
+                }else if (o instanceof Gather){
+                    gather = (Gather)o;
+                }else if (o instanceof Client){
+                    client = (Client)o;
+                }
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public BackUP getBackup() throws Exception {
+        backUP.init(pro);
+        return backUP;
+    }
+
+    @Override
+    public Gather getGather() throws Exception {
+        gather.init(pro);
+        return gather;
+    }
+
+    @Override
+    public Client getClient() throws Exception {
+        client.init(pro);
+        return client;
+    }
+}

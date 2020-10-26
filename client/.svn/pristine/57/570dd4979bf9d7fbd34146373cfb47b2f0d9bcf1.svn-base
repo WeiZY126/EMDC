@@ -1,0 +1,74 @@
+package com.briup.client.impl;
+
+import com.briup.aware.ConfigurationAware;
+import com.briup.bean.Environment;
+import com.briup.client.Client;
+import com.briup.client.Logger;
+import com.briup.conf.Configuration;
+
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.Collection;
+import java.util.Properties;
+
+public class ClientImpl implements Client, ConfigurationAware {
+    private String ip;
+    private int port;
+    private Logger logger;
+
+    @Override
+    public void send(Collection<Environment> paramCollection) {
+        OutputStream os = null;
+        ObjectOutputStream oos = null;
+        Socket socket = null;
+        try {
+            socket = new Socket(ip, port);
+            logger.info("链接至服务器");
+            if (paramCollection.size() != 0) {
+                os = socket.getOutputStream();
+                oos = new ObjectOutputStream(os);
+                logger.info("开始发送数据");
+                oos.writeObject(paramCollection);
+                oos.flush();
+                os.flush();
+                logger.info("发送完成");
+            } else {
+                logger.info("此次未读取到新数据，客户端即将关闭");
+            }
+        } catch (UnknownHostException e) {
+            logger.error("链接异常：" + e.getMessage());
+
+        } catch (IOException e) {
+            logger.error("传输流异常：" + e.getMessage());
+        } finally {
+            try {
+                if (os != null)
+                    os.close();
+                if (oos != null)
+                    oos.close();
+                if (socket != null)
+                    socket.close();
+            } catch (IOException e) {
+                logger.error("关闭失败:" + e.getMessage());
+            }
+        }
+    }
+
+    @Override
+    public void init(Properties properties) {
+        ip = properties.getProperty("ip");
+        port = Integer.parseInt(properties.getProperty("port"));
+    }
+
+    @Override
+    public void setConfiguration(Configuration paramConfiguration) {
+        try {
+            logger = paramConfiguration.getLogger();
+        } catch (Exception e) {
+            System.out.println("获取logger实例失败");
+        }
+    }
+}

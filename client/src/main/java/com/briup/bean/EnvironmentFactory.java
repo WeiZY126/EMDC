@@ -1,0 +1,38 @@
+package com.briup.bean;
+
+import java.sql.Timestamp;
+
+/**
+ * 数据工厂，返回不同的测量对象
+ */
+public class EnvironmentFactory {
+    public static Environment getTempEn(String srcId, String desId, String devId, String sersorAddress, int count, String cmd, int status, String data, Timestamp gather_date) {
+        String name = "温度";
+        data = data.substring(0, 4);
+        Float fData = (float)(((float)Integer.parseInt(data,16)*0.00268127)-46.85);
+        return new Environment(name, srcId, desId, devId, sersorAddress, count, cmd, status, fData, gather_date);
+    }
+
+    public static Environment getHumiEn(String srcId, String desId, String devId, String sersorAddress, int count, String cmd, int status, String data, Timestamp gather_date) {
+        String name = "湿度";
+        data = data.substring(4, 8);
+        Float  fData = (float) (((float)Integer.parseInt(data,16)*0.00190735)-6);
+        return new Environment(name, srcId, desId, devId, sersorAddress, count, cmd, status, fData, gather_date);
+
+    }
+
+    public static Environment getCO2En(String srcId, String desId, String devId, String sersorAddress, int count, String cmd, int status, String data, Timestamp gather_date) {
+        String name = "二氧化碳";
+        Float fData = Float.parseFloat(data.substring(0,2));
+        return new Environment(name, srcId, desId, devId, sersorAddress, count, cmd, status, fData, gather_date);
+
+    }
+
+    public static Environment getSunEn(String srcId, String desId, String devId, String sersorAddress, int count, String cmd, int status, String data, Timestamp gather_date) {
+        String name = "光照强度";
+        Float fData = Float.parseFloat(data.substring(0,2));
+        return new Environment(name, srcId, desId, devId, sersorAddress, count, cmd, status, fData, gather_date);
+    }
+
+
+}

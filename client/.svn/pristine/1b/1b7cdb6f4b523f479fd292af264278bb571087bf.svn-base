@@ -1,0 +1,15 @@
+#save
+#Wed Sep 23 14:21:41 CST 2020
+#读取文件路径
+target=src//main//java//radwtmp1
+#记录读取进度路径
+record=src//main//java//record
+#ip及端口
+ip=127.0.0.1
+port=8099
+#数据库连接
+url=jdbc:mysql://127.0.0.1:3306/emdc?serverTimezone=Hongkong
+uname=root
+pwd=root
+
+

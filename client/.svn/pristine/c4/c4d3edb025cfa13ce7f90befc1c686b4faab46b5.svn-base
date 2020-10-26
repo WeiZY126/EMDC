@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="742a61b8-eaba-4c4d-bded-f25bdb657c12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/briup/client/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/briup/client/impl/LoggerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/briup/client/impl/ClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/briup/client/impl/ClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/briup/client/impl/GatherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/briup/client/impl/GatherImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/briup/conf/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/briup/conf/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/briup/conf/impl/BackUPImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/briup/conf/impl/BackUPImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/briup/conf/impl/ConfigurationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/briup/conf/impl/ConfigurationImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../apache-maven-3.3.9" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hntMnoup4MzDBZsE44OCwJuRHm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\IntelliJ IDEA 2020.1\Project\tmp\client\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\IntelliJ IDEA 2020.1\Project\tmp\client\src\main\resources" />
+      <recent name="G:\IntelliJ IDEA 2020.1\Project\tmp\client\src\main\java" />
+      <recent name="G:\IntelliJ IDEA 2020.1\Project\tmp\client\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.briup.App" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.briup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.briup.client.impl.Test" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.briup.client.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.briup.test" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.briup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\wzy\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+    <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="G:\IntelliJ IDEA 2020.1\Project\tmp\client" />
+          <option name="myCopyRoot" value="G:\IntelliJ IDEA 2020.1\Project\tmp\client" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="G:\IntelliJ IDEA 2020.1\Project\tmp\client" />
+          <option name="myCopyRoot" value="G:\IntelliJ IDEA 2020.1\Project\tmp\client" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="742a61b8-eaba-4c4d-bded-f25bdb657c12" name="Default Changelist" comment="" />
+      <created>1600658638352</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600658638352</updated>
+      <workItem from="1600668717436" duration="17399000" />
+      <workItem from="1600736826396" duration="7651000" />
+      <workItem from="1600754426434" duration="1464000" />
+      <workItem from="1600756094828" duration="5735000" />
+      <workItem from="1600772331101" duration="1777000" />
+      <workItem from="1600823320393" duration="11523000" />
+      <workItem from="1600858539433" duration="5554000" />
+      <workItem from="1600864900089" duration="1553000" />
+      <workItem from="1600867024108" duration="617000" />
+      <workItem from="1600914472688" duration="2661000" />
+      <workItem from="1600927406448" duration="4120000" />
+    </task>
+    <task id="LOCAL-00001">
+      <created>1600859023634</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600859023634</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1600859050453</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600859050453</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1600859844410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600859844410</updated>
+    </task>
+    <task id="LOCAL-00004">
+      <created>1600860001612</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600860001612</updated>
+    </task>
+    <task id="LOCAL-00005">
+      <created>1600860273720</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600860273720</updated>
+    </task>
+    <task id="LOCAL-00006">
+      <created>1600861341772</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600861341772</updated>
+    </task>
+    <task id="LOCAL-00007">
+      <created>1600861656571</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600861656571</updated>
+    </task>
+    <task id="LOCAL-00008">
+      <created>1600914559950</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600914559950</updated>
+    </task>
+    <task id="LOCAL-00009">
+      <created>1600928754280</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600928754280</updated>
+    </task>
+    <task id="LOCAL-00010">
+      <created>1600929221377</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1600929221377</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1600916412646">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1600916412646" />
+    <state x="704" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600739740135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="704" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600739740135" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1600932274558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600932274558" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600929203538">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600929203538" />
+    <state x="524" y="104" key="CommitChangelistDialog2" timestamp="1600929219587">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="524" y="104" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600929219587" />
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom" timestamp="1600930678266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600930678266" />
+    <state width="1877" height="289" key="GridCell.Tab.0.center" timestamp="1600930678266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600930678266" />
+    <state width="1877" height="289" key="GridCell.Tab.0.left" timestamp="1600930678265">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600930678265" />
+    <state width="1877" height="289" key="GridCell.Tab.0.right" timestamp="1600930678266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600930678266" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1600930763687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600930763687" />
+    <state x="753" y="207" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600859881917">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="207" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600859881917" />
+    <state x="768" y="416" key="svn.passwordDialog" timestamp="1600858826047">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="768" y="416" key="svn.passwordDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600858826047" />
+    <state x="758" y="203" key="svn.repositoryBrowser" timestamp="1600858830794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="758" y="203" key="svn.repositoryBrowser/0.0.1920.1040@0.0.1920.1040" timestamp="1600858830794" />
+    <state x="764" y="421" key="svn.sslCredentialsDialog" timestamp="1600858746291">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="764" y="421" key="svn.sslCredentialsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600858746291" />
+    <state x="785" y="408" key="svn.sslDialog" timestamp="1600858822829">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="785" y="408" key="svn.sslDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600858822829" />
+    <state x="765" y="421" key="svn.upgradeDialog" timestamp="1600858833665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="421" key="svn.upgradeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600858833665" />
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+	<gather class="com.briup.client.impl.GatherImpl">
+		<target>src/radwtmp1</target>
+	</gather>
+	<client  class="com.briup.client.impl.ClientImpl">
+		
+	</client>
+<!--	<server  class="com.briup.impl.ServerImpl">-->
+<!--		<port>8099</port>-->
+<!--		<ip>127.0.0.1</ip>-->
+<!--	</server>-->
+	<backup  class="com.briup.conf.impl.BackUPImpl">
+		
+	</backup>
+<!--	<savedb  class="com.briup.impl.DbSotreImpl">-->
+
+<!--	</savedb>-->
+</mapping>

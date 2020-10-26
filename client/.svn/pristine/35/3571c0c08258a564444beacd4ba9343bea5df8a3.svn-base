@@ -1,0 +1,47 @@
+package com.briup.client.impl;
+
+import com.briup.bean.Environment;
+import com.briup.client.Client;
+
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.util.Collection;
+import java.util.Properties;
+
+public class ClientImpl implements Client {
+    private String ip;
+    private int port;
+
+    @Override
+    public void send(Collection<Environment> paramCollection){
+        OutputStream os = null;
+        ObjectOutputStream oos = null;
+        Socket socket = null;
+        try {
+            socket = new Socket(ip, port);
+            os = socket.getOutputStream();
+            oos = new ObjectOutputStream(os);
+            oos.writeObject(paramCollection);
+            oos.flush();
+            os.flush();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                os.close();
+                oos.close();
+                socket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    public void init(Properties properties) {
+        ip = properties.getProperty("ip");
+        port = Integer.parseInt(properties.getProperty("port"));
+    }
+}

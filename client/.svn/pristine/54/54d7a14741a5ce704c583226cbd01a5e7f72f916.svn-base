@@ -1,0 +1,14 @@
+#save
+#Wed Sep 23 14:21:41 CST 2020
+client=
+port=8099
+gather=
+backup=
+server=
+target=src//main//java//radwtmp1
+ip=127.0.0.1
+savedb=
+uname=root
+pwd=root
+url=jdbc:mysql://127.0.0.1:3306/emdc?serverTimezone=Hongkong
+record=src//main//java//record

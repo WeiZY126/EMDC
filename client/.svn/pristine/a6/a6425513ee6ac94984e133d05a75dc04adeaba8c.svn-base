@@ -1,0 +1,21 @@
+package com.briup.conf.impl;
+
+import com.briup.conf.BackUP;
+
+import java.util.Properties;
+
+public class BackUPImpl implements BackUP {
+    @Override
+    public void store(String key, Object data, boolean flag) throws Exception {
+    }
+
+    @Override
+    public Object load(String key, boolean flag) throws Exception {
+        return null;
+    }
+
+    @Override
+    public void init(Properties properties) {
+
+    }
+}

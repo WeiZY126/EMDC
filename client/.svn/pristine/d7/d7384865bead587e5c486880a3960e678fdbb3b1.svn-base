@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+    <gather class="com.briup.client.impl.GatherImpl">
+        <target>src//main//java//radwtmp1</target>
+        <record>src//main//java//record</record>
+    </gather>
+    <client class="com.briup.client.impl.ClientImpl">
+        <port>8099</port>
+        <ip>127.0.0.1</ip>
+    </client>
+   <!-- 	<server  class="com.briup.server.impl.ServerImpl">
+    		<port>8099</port>
+    		<ip>127.0.0.1</ip>
+    	</server>
+    	<backup  class="com.briup.conf.impl.BackUPImpl">
+
+    	</backup>
+    	<savedb  class="com.briup.server.impl.DBStoreImpl">
+    		<url>jdbc:mysql://127.0.0.1:3306/emdc?serverTimezone=Hongkong</url>
+    		<uname>root</uname>
+    		<pwd>root</pwd>
+    	</savedb>-->
+</mapping>
